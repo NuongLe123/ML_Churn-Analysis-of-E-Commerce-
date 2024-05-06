@@ -23,9 +23,9 @@ Supervised learning with Scikit-learn on Python
 ## II. Proccess
 ### STEP 1: DATA PROCESSING:
 
-- 1. **OUTLIERS**: Visualization to detect outliers - Handle outliers using IQR method
-- 2. **MISSING VALUES**: Handling it by replacing with median:
-- 3. **EDA**: Seaborn and Matplotlib were used to conduct Exploratory Data Analysis (EDA) and extract knowledge from the data.
+- **OUTLIERS**: Visualization to detect outliers - Handle outliers using IQR method
+- **MISSING VALUES**: Handling it by replacing with median:
+- **EDA**: Seaborn and Matplotlib were used to conduct Exploratory Data Analysis (EDA) and extract knowledge from the data.
    
 ### STEP 2: FEATURE TRANSFORMING:
 - The dummy variables have been created for the remaining categorical columns so that their input should be considered by the Machine Learning model.
@@ -43,7 +43,8 @@ Decide to choose 3 models to apply: Logistic Regression, Decision Tree, Random F
 ### STEP 5: MODEL EVALUATION:
 
 **Nhận xét về 3 models:**
-- **model 'Decision Tree'**: có chỉ số Balanced accuracy giữa train test và test set bị chênh lệch quá mức, thể hiện nó bị overfitting (1 và 0.95) -> ko nên dùng model này.
+- **model 'Decision Tree'**: có chỉ số Balanced accuracy giữa train test và test set bị chênh lệch quá mức, thể hiện nó bị overfitting (1 và 0.95)
+  => ko nên dùng model này.
 - **model 'Random Forest'**: có chỉ số Balanced accuracy giữa train test và test set tương tự nhau (0.66 và 0.65), thể hiện model nắm bắt được underlying patterns trong bộ dataset, và đưa ra những dự đoán hợp lý. -> nên dùng model này.
 - **model 'Logistic Regression'**: model đang phân loại chính xác trung bình khoảng 60 và 64% điểm dữ liệu trong tập train và tập test (0.60 và 0.64)
 - **Kết luận: nên dùng model 'Random Forest'** vì nó có chỉ số Balanced accuracy giữa train test và test set cao và tương tự nhau.
