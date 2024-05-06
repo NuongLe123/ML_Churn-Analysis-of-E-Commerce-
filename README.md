@@ -20,24 +20,22 @@ Supervised learning with Scikit-learn on Python
 ## II. Proccess
 ### STEP 1: DATA PROCESSING:
 
-1. OUTLIER: Visualization to detect outliers - Handle outliers using IQR method
-
-2. MISSING VALUES - Handling it by replacing with median:
-3. EDA:
+- 1. **OUTLIERS**: Visualization to detect outliers - Handle outliers using IQR method
+- 2. **MISSING VALUES**: Handling it by replacing with median:
+- 3. **EDA**: Seaborn and Matplotlib were used to conduct Exploratory Data Analysis (EDA) and extract knowledge from the data.
    
 ### STEP 2: FEATURE TRANSFORMING:
-### STEP 3: MODEL SELECTION:
-Decide to choose 3 models to apply: Logistic Regression, Decision Tree, Random Forest:
+- The dummy variables have been created for the remaining categorical columns so that their input should be considered by the Machine Learning model.
 
 ### STEP 3: MODEL SELECTION:
 
 Decide to choose 3 models to apply: Logistic Regression, Decision Tree, Random Forest:
 - **Linear model**: Linear regression và Logistic Regression đều là linear model. Tức là với 2 model này, mình cần phải **đưa những features mà nó thật sự có mối quan hệ với cột target column** = cái cột mà mình còn dự đoán. Nó phải thực sự có tương quan thì khi đó cái model này mới hoạt động tốt, nó mới cho ra được 1 cái accuracy cao. Nhược điểm là **bước EDA phải làm cẩn thận**.
 - **Non-linear model**: Tuy nhiên, đối với 2 model là decision tree & random forest, thì lại là non-linear model, tức là **có thể đưa toàn bộ features vào**, thì 2 model này nó sẽ tự động lọc ra được những cái features nào mà có tương quan cao nhất, thì nó sẽ lấy cái feature đó vào model. 2 cái model này nó học dựa trên cái tree-based. 
-- **Random forest**: Mô hình được khuyến khích dùng là Random forest, do nó **giải quyết được vấn đề Overfitting**, vốn là nhược nhược điểm của Decision tree.
+- **Random forest**: Mô hình được khuyến khích dùng là Random forest, do nó **giải quyết được vấn đề Overfitting**, vốn là nhược điểm của Decision tree.
 
 ### STEP 4: MODEL TRAINING:
-Split data into train/test set – Fit the model on train set & predict on test set:
+- Split data into train/test set – Fit the model on train set & predict on test set:
 
 ### STEP 5: MODEL EVALUATION:
 
@@ -56,4 +54,4 @@ Split data into train/test set – Fit the model on train set & predict on test 
 - **Tiến hành thử nghiệmm A/B** để nâng cao trải nghiệm người dùng và giao diện người dùng, điều này sẽ nâng cao trải nghiệm khách hàng và tăng tỷ lệ chuyển đổi.
 
 ### STEP 6: IMPROVING MODEL ACCURACY BY HYPERPARAMETER TUNING:
-Nhờ có pp HYPERPARAMETER TUNING, mà accuracy của model 'Random Forest' đã tăng từ 0.66 lên thành 0.96.
+- Nhờ có pp HYPERPARAMETER TUNING, mà accuracy của model 'Random Forest' đã tăng từ 0.66 lên thành 0.96.
