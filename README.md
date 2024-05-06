@@ -7,8 +7,8 @@ Customer Churn is when customers stop purchasing/using business's products or se
 
 ### 2. Business question
 One ecommerce company has a project on predicting churned users in order to offer potential promotions. Specifically, there are 2 main questions that I need to answer:
-- 1. What are the patterns/behavior of churned users? What are your suggestions to the company to reduce churned users.
-- 2. Build the Machine Learning model for predicting churned users.
+- What are the patterns/behavior of churned users? What are your suggestions to the company to reduce churned users.
+- Build the Machine Learning model for predicting churned users.
 
 ### 3. Dataset
 <img width="534" alt="Screenshot_10" src="https://github.com/NuongLe123/Python_RFM_analysis/assets/168357450/6c0cd1eb-6c5c-4bda-996c-27a85ccc7e4e">
