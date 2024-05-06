@@ -2,15 +2,18 @@
 Utilizing supervised learning models to predict customer churn, and discovering customer's behaviour in order to identify the key indicators of customer's churn status
 
 ## I. Introduction
-### 1. Business question
+### 1. Context
+Customer Churn is when customers stop purchasing/using business's products or service in certain period of time. Customer churn is one critical metric because it's less expensive to retain existing customers than acquire new customers. In this kernel, I'll analyze E-commerce customer churn rate and looking for user patterns whos likely churned. Customer churn rate indicates how many existing customers are not using products-services or switch to business competitors.
+
+### 2. Business question
 One ecommerce company has a project on predicting churned users in order to offer potential promotions. Specifically, there are 2 main questions that I need to answer:
 - 1. What are the patterns/behavior of churned users? What are your suggestions to the company to reduce churned users.
 - 2. Build the Machine Learning model for predicting churned users.
 
-### 2. Dataset
+### 3. Dataset
 <img width="534" alt="Screenshot_10" src="https://github.com/NuongLe123/Python_RFM_analysis/assets/168357450/6c0cd1eb-6c5c-4bda-996c-27a85ccc7e4e">
 
-### 3. Method
+### 4. Method
 Supervised learning with Scikit-learn on Python
 
 - Supervised learning, also known as supervised machine learning, is a subcategory of machine learning and artificial intelligence. It is defined by its use of labeled datasets to train algorithms that to classify data or predict outcomes accurately.
