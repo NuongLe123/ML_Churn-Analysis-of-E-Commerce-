@@ -33,7 +33,7 @@ Supervised learning with Scikit-learn on Python
 ### STEP 3: MODEL SELECTION:
 
 Decide to choose 3 models to apply: Logistic Regression, Decision Tree, Random Forest:
-- **Linear model**: Linear regression và Logistic Regression đều là linear model. Tức là với 2 model này, mình cần phải **đưa những features mà nó thật sự có mối quan hệ với cột target column** = cái cột mà mình còn dự đoán. Nó phải thực sự có tương quan thì khi đó cái model này mới hoạt động tốt, nó mới cho ra được 1 cái accuracy cao. Nhược điểm là **bước EDA phải làm cẩn thận**.
+- **Linear model**: Linear regression và Logistic Regression đều là linear model. Tức là với 2 model này, cần phải **đưa những features mà nó thật sự có mối quan hệ với cột target column** = cột mà ta cần dự đoán. Nó phải thực sự có tương quan thì khi đó cái model này mới hoạt động tốt, nó mới cho ra được 1 cái accuracy cao. Nhược điểm là **bước EDA phải làm cẩn thận**.
 - **Non-linear model**: Tuy nhiên, đối với 2 model là decision tree & random forest, thì lại là non-linear model, tức là **có thể đưa toàn bộ features vào**, thì 2 model này nó sẽ tự động lọc ra được những cái features nào mà có tương quan cao nhất, thì nó sẽ lấy cái feature đó vào model. 2 cái model này nó học dựa trên cái tree-based. 
 - **Random forest**: Mô hình được khuyến khích dùng là Random forest, do nó **giải quyết được vấn đề Overfitting**, vốn là nhược điểm của Decision tree.
 
