@@ -43,19 +43,19 @@ Decide to choose 3 models to apply: Logistic Regression, Decision Tree, Random F
 ### STEP 5: MODEL EVALUATION:
 
 **Nhận xét về 3 models:**
-- **model 'Decision Tree'**: có chỉ số Balanced accuracy giữa train test và test set bị chênh lệch quá mức, thể hiện nó bị overfitting (1 và 0.95)
+- **Model 'Decision Tree'**: có chỉ số Balanced accuracy giữa train test và test set bị chênh lệch quá mức, thể hiện nó bị overfitting (1 và 0.95)
   => ko nên dùng model này.
-- **model 'Random Forest'**: có chỉ số Balanced accuracy giữa train test và test set tương tự nhau (0.66 và 0.65), thể hiện model nắm bắt được underlying patterns trong bộ dataset, và đưa ra những dự đoán hợp lý. -> nên dùng model này.
-- **model 'Logistic Regression'**: model đang phân loại chính xác trung bình khoảng 60 và 64% điểm dữ liệu trong tập train và tập test (0.60 và 0.64)
-- **Kết luận: nên dùng model 'Random Forest'** vì nó có chỉ số Balanced accuracy giữa train test và test set cao và tương tự nhau.
+- **Model 'Random Forest'**: có chỉ số Balanced accuracy giữa train test và test set tương tự nhau (0.66 và 0.65), thể hiện model nắm bắt được underlying patterns trong bộ dataset, và đưa ra những dự đoán hợp lý. -> nên dùng model này.
+- **Model 'Logistic Regression'**: model đang phân loại chính xác trung bình khoảng 60 và 64% điểm dữ liệu trong tập train và tập test (0.60 và 0.64)
+- **Kết luận: Nên dùng model 'Random Forest'** vì nó có chỉ số Balanced accuracy giữa train test và test set cao và tương tự nhau.
 
 ### Recommendations:
-- Từ hình vẽ trên, ta có thể thấy **Top 4 predictors of churn là: Tenure, Complain, CashbackAmount, DaySinceLastOrderr**. Do đó, ta sẽ có những recommendations sau cho doanh nghiệp:
+- Từ hình vẽ trên, ta có thể thấy **Top 4 predictors of churn là: Tenure, Complain, CashbackAmount, DaySinceLastOrder**. Do đó, ta sẽ có những recommendations sau cho doanh nghiệp:
 - Tăng tenure bằng cách: bắt đầu 1 số **chương trình cho khách hàng thân thiết**, như giảm giá cho họ.
 - Complains đứng ở vị trí thứ 2, nên doanh nghiệp cần phải đảm bảo **dịch vụ khách hàng** của họ có đủ trình độ để giải quyết các khiếu nại 1 cách chuyên nghiệp.
 - Cung cấp **khuyến mãi cho chủ thẻ tín dụng và thẻ ghi nợ**, vì khách hàng sử dụng thẻ có nhiều khả năng rời bỏ hơn các khách hàng còn lại.
-- Ngoài ra, để tăng sự hài lòng của khác hàng,  công ty **cần thực hiện 1 số khảo sát để lấy phản hồi của khách hàng**, từ đó biết được vấn đề cần tập trung và giải quyết nó.
-- **Tiến hành thử nghiệmm A/B** để nâng cao trải nghiệm người dùng và giao diện người dùng, điều này sẽ nâng cao trải nghiệm khách hàng và tăng tỷ lệ chuyển đổi.
+- Ngoài ra, để tăng sự hài lòng của khác hàng,  công ty **cần thực hiện 1 số khảo sát để lấy phản hồi của khách hàng**, từ đó biết được vấn đề cần tập trung và giải quyết vấn đề đó.
+- **Tiến hành thử nghiệmm A/B**, nhằm giúp nâng cao trải nghiệm của khách hàng và tăng tỷ lệ chuyển đổi.
 
 ### STEP 6: IMPROVING MODEL ACCURACY BY HYPERPARAMETER TUNING:
 - Nhờ có pp HYPERPARAMETER TUNING, mà accuracy của model 'Random Forest' đã tăng từ 0.66 lên thành 0.96.
